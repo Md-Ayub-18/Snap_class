@@ -1,0 +1,28 @@
+#utilities
+numpy
+pandas
+#for classification 
+scikit-learn
+dlib-bin
+
+git+https://github.com/ageitgey/face_recognition_models
+setuptools
+
+
+#to store data in supabase
+supabase
+
+# to make the hash codde    
+bcrypt
+
+#for image processing
+pillow
+
+#front-end library
+
+streamlit
+
+
+
+
+
