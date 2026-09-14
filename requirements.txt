@@ -1,28 +1,26 @@
-#utilities
+# utilities
 numpy
 pandas
-#for classification 
+
+# for classification
 scikit-learn
 dlib-bin
-
 git+https://github.com/ageitgey/face_recognition_models
 setuptools
 
-
-#to store data in supabase
+# to store data in supabase
 supabase
 
-# to make the hash codde    
+# to make the hash code
 bcrypt
 
-#for image processing
+# for image processing
+segno
 pillow
 
-#front-end library
-
+# front-end library
 streamlit
 
-
-
-
-
+# audio / voice
+librosa
+webrtcvad-wheels

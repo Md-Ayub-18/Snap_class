@@ -1,93 +1,120 @@
 import streamlit as st
 def style_background_home():
-    st.markdown(
-        """
-        <style>    
-        }
-        .stApp {
-            background-color: #586F2 !important;
-        }
-        
-        .stApp div[data-testid="stColumn"] {
-            background-color: #E0E3FF !important;
-            padding: 2.5rem !important;
-            border-radius: 5rem !important;
+
+    st.markdown("""
+        <style>
+            .stApp {
+                background: #5865F2 !important;
             }
+
+            .stApp div[data-testid="stColumn"] {
+                background-color: #E0E3FF !important;
+                padding: 2.5rem !important;
+                border-radius: 5rem !important;
+            }
+
+            /* Home screen student & teacher headings */
+            .stApp div[data-testid="stColumn"] h2 {
+                color: black !important;
+            }
+
         </style>
-        """,
-        unsafe_allow_html=True
-    )
+    """, unsafe_allow_html=True)
     
+
 def style_background_dashboard():
-    st.markdown(
-        """
+
+    st.markdown("""
         <style>
-        .stApp {
-            background-color: #5865f2 !important;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+
+                .stApp {
+                    background: #E0E3FF !important;
+                }
+
+        </style>  
+
+                """
+            ,unsafe_allow_html=True)
+    
+
+    
+
 def style_base_layout():
-    st.markdown(
-        """
+# asdasd
+    st.markdown("""
         <style>
-        @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979..2050&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-        
-            #Mainmenu, header, footer{
-            visibility: hidden;
+
+                
+         /* Hide Top Bar of streamlit */
+                
+            #MainMenu, footer, header {
+                visibility: hidden;
             }
+                
             .block-container {
-            padding-top: 1rem !imortant; 
+                padding-top:1.5rem !important;    
             }
-            h2{
-                font-family: 'Climate Crisis', sans-serif !important;
-                font-size: 2rem !important;
-                line-height: 0.9 !important;
-                margin-bottom: 0 !important;
-                color: #140f0f !important;
-            }
-            h1{
+
+            h1 {
                 font-family: 'Climate Crisis', sans-serif !important;
                 font-size: 3.5rem !important;
-                line-height: 0.9 !important;
-                margin-bottom: 0 !important;
-                color: #E0E3FF !important;
+                line-height: 1.1 !important;
+                margin-bottom: 0rem !important;
+                # color: black !important;
             }
-            h3,h5,h6,p{
-                font-family: 'Outfit', sans-serif !important;
+            /* Login page headings only */
+            .stApp h1:has(+ div) {
+                color: black !important;
+                    }
+                
+
+            h2 {
+                font-family: 'Climate Crisis', sans-serif !important;
+                font-size: 2rem !important;
+                line-height:0.9 !important;
+                margin-bottom:0rem !important;
                 
             }
-            button[kind="primary"]{
+            
+                
+            h3, h4, p {
+               
+                font-family: 'Outfit', sans-serif;    
+            }
+                
+
+            button{
                 border-radius: 1.5rem !important;
                 background-color: #5865F2 !important;
                 color: white !important;
                 padding: 10px 20px !important;
                 border: none !important;
-                transition: transform 0.3s ease-in-out !important;
-            }
+                transition: transform 0.25s ease-in-out !important;
+                }
+
             button[kind="secondary"]{
                 border-radius: 1.5rem !important;
-                background-color: #e8459e !important;
+                background-color: #EB459E !important;
                 color: white !important;
                 padding: 10px 20px !important;
                 border: none !important;
-                transition: transform 0.3s ease-in-out !important;
-            }
+                transition: transform 0.25s ease-in-out !important;
+                }
+
             button[kind="tertiary"]{
                 border-radius: 1.5rem !important;
                 background-color: black !important;
                 color: white !important;
                 padding: 10px 20px !important;
                 border: none !important;
-                transition: transform 0.3s ease-in-out !important;
-            }
-            button:hover{
-                transform: scale(1.05) !important;
+                transition: transform 0.25s ease-in-out !important;
                 }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+
+            button:hover{
+                transform :scale(1.05)}
+        </style>  
+
+                """
+            ,unsafe_allow_html=True)

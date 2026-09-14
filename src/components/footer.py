@@ -1,34 +1,35 @@
 import streamlit as st
 
+
 def footer_home():
-    ftr_url = "https://i.ibb.co/C5gwHGXC/mdayublogo1-2.png"
+    logo_url = "https://i.ibb.co/C5gwHGXC/mdayublogo1-2.png"
 
     st.markdown(f"""
-        <div style="
-            margin-top: 2rem;
-            gap: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        ">
-            <p style="
-                font-weight: bold;
-                color: white;
-                font-size: 22px;
-                margin: 0;
-                display: flex;
-                align-items: center;
-                gap: 8px;
-            ">
-                Created with ❤️ by
-                <img src="{ftr_url}"
-                     style="
-                        height: 32px;
-                        width: auto;
-                        display: inline-block;
-                        object-fit: contain;
-                     ">
-            </p>
-        </div>
+<div style="position:fixed; bottom:20px; left:0; width:100%; display:flex; justify-content:center; align-items:center; gap:6px; z-index:9999;">
+<p style="font-weight:bold; color:white; font-size:20px; margin:0;">Created with ❤️ by</p>
+<img src="{logo_url}" style="height:25px; width:auto; display:block;">
+</div>
+""", unsafe_allow_html=True)
+
+
+def footer_dashboard():
+    logo_url = "https://i.ibb.co/C5gwHGXC/mdayublogo1-2.png"
+
+    st.markdown(f"""
+    <div style="
+        position: fixed;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    ">
+        <span style="
+            font-weight: bold;
+            color: black;
+            font-size: 20px;
+        ">Created with ❤️ by</span><img src="{logo_url}" style="height: 30px; width: auto;">
+    </div>
     """, unsafe_allow_html=True)
