@@ -9,7 +9,7 @@ pandas
 scikit-learn
 dlib-bin
 git+https://github.com/ageitgey/face_recognition_models
-setuptools
+setuptools<82
 
 # to store data in supabase
 supabase
@@ -24,4 +24,5 @@ pillow
 
 # audio / voice
 librosa
+resemblyzer
 webrtcvad-wheels
