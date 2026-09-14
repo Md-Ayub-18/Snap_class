@@ -1,3 +1,6 @@
+# front-end library
+streamlit
+
 # utilities
 numpy
 pandas
@@ -18,8 +21,6 @@ bcrypt
 segno
 pillow
 
-# front-end library
-streamlit
 
 # audio / voice
 librosa
