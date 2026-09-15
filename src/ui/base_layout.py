@@ -1,25 +1,31 @@
 import streamlit as st
-def style_background_home():
+import streamlit as st
 
+def style_background_home():
     st.markdown("""
         <style>
-            .stApp {
-                background: #5865F2 !important;
-            }
+        /* Force browser scrollbars and inputs to stay light */
+        html, body, [data-testid="stAppViewContainer"] {
+            color-scheme: light !important;
+        }
 
-            .stApp div[data-testid="stColumn"] {
-                background-color: #E0E3FF !important;
-                padding: 2.5rem !important;
-                border-radius: 5rem !important;
-            }
-
-            /* Home screen student & teacher headings */
-            .stApp div[data-testid="stColumn"] h2 {
-                color: black !important;
-            }
-
+        .stApp {
+            background: #5865F2 !important;
+        }
+        
+        .stApp div[data-testid="stColumn"] {
+            background-color: #E0E3FF !important;
+            padding: 2.5rem !important;
+            border-radius: 5rem !important;
+        }
+        
+        /* Home screen student & teacher headings */
+        .stApp div[data-testid="stColumn"] h2 {
+            color: black !important;
+        }
         </style>
-    """, unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
+
     
 
 def style_background_dashboard():
